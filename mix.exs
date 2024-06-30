@@ -3,13 +3,13 @@ defmodule DBux.Mixfile do
 
   def project do
     [app: :dbux,
-     version: "1.0.3",
+     version: "1.0.4",
      elixir: "~> 1.0",
-     description: description,
-     package: package,
+     description: description(),
+     package: package(),
      test_coverage: [tool: ExCoveralls, test_task: "espec"],
      preferred_cli_env: [espec: :test, "coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test, "coveralls.html": :test],
-     deps: deps]
+     deps: deps()]
   end
 
   def application do
